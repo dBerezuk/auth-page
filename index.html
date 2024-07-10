@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Preleand</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/libs/imask.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- тут путь до картинки фона!-->
+    <main class="main" style="--bg-url: url('./../images/bg.webp')">
+      <div class="container">
+        <div class="place-positioning">
+          <form class="auth">
+            <header class="auth__top">
+              <button
+                class="auth__top-button is-active"
+                type="button"
+                data-type="email"
+              >
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.33331 7.5L10.5 10.4167L14.6666 7.5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2.16669 14.1667V5.83334C2.16669 4.91286 2.91288 4.16667 3.83335 4.16667H17.1667C18.0872 4.16667 18.8334 4.91286 18.8334 5.83334V14.1667C18.8334 15.0872 18.0872 15.8333 17.1667 15.8333H3.83335C2.91288 15.8333 2.16669 15.0872 2.16669 14.1667Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                По эл. почте
+              </button>
+              <button class="auth__top-button" type="button" data-type="phone">
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5 13.3417L10.5083 13.3324"
+                    stroke="#8B93C7"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.33337 16.1667V3.83333C6.33337 3.55719 6.55723 3.33333 6.83337 3.33333H14.1667C14.4429 3.33333 14.6667 3.55719 14.6667 3.83333V16.1667C14.6667 16.4428 14.4429 16.6667 14.1667 16.6667H6.83337C6.55723 16.6667 6.33337 16.4428 6.33337 16.1667Z"
+                    stroke="#8B93C7"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                По телефону
+              </button>
+            </header>
+            <div class="auth__body">
+              <div class="auth__fields">
+                <fieldset class="auth__field-group is-active" data-type="email">
+                  <legend class="visually-hidden">
+                    Группа полей для регистрации через email и пароль
+                  </legend>
+                  <div class="field">
+                    <div class="field__box">
+                      <img
+                        class="field__icon"
+                        src="./images/icons/email.svg"
+                        alt=""
+                      />
+                      <label class="visually-hidden" for="email"
+                        >Електронная почта</label
+                      >
+                      <input
+                        class="field__input"
+                        id="email"
+                        type="email"
+                        placeholder="Введите Ваш Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="field__box">
+                      <img
+                        class="field__icon"
+                        src="./images/icons/lock.svg"
+                        alt=""
+                      />
+                      <label class="visually-hidden" for="password"
+                        >Пароль</label
+                      >
+                      <input
+                        class="field__input"
+                        id="password"
+                        type="password"
+                        placeholder="Придумайте пароль"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="auth__field-group" disabled data-type="phone">
+                  <legend class="visually-hidden">
+                    Группа полей для регистрации через телефон
+                  </legend>
+                  <div class="field">
+                    <div class="field__box">
+                      <img
+                        class="field__icon"
+                        src="./images/icons/phone.svg"
+                        alt=""
+                      />
+                      <label class="visually-hidden" for="tel">Телефон</label>
+                      <input
+                        class="field__input"
+                        id="tel"
+                        type="tel"
+                        placeholder="Введите Ваш номер телефона"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="field">
+                  <div class="field__box">
+                    <img
+                      class="field__icon"
+                      src="./images/icons/many.svg"
+                      alt=""
+                    />
+                    <label class="visually-hidden" for="currency">Валюта</label>
+                    <select class="field__input field__select" id="currency">
+                      <option>Украинская гривна (UAH)</option>
+                      <option>Украинская гривна (UAH) 2</option>
+                      <option>Украинская гривна (UAH) 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button class="button" type="submit">Зарегистрироваться</button>
+            </div>
+            <footer class="auth__info">
+              <span class="auth__info-account"
+                >Уже есть аккаунт? <a class="link" href="/">Войти</a></span
+              >
+              <p class="auth__info-text">
+                Нажимая кнопку Зарегистрироваться, Вы принимаете
+                <b>Политика конфиденциальности</b> и
+                <b>Условия использования.</b>
+              </p>
+            </footer>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
