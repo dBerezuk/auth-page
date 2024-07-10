@@ -11,7 +11,14 @@
   </head>
   <body>
     <!-- тут путь до картинки фона!-->
-    <main class="main" style="--bg-url: url('./../images/bg.webp')">
+    <main class="main" style="--bg-url: url('./../images/bg.png')">
+      <style>
+        @media (max-width: 1000px) {
+          .main {
+            --bg-url: url('./../images/bg-mobile.png') !important;
+          }
+        }
+      </style>
       <div class="container">
         <div class="place-positioning">
           <form class="auth">
