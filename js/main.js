@@ -28,7 +28,3 @@ function authFieldGroupsHides(collection, disabled) {
     elem.classList.remove('is-active');
   });
 }
-
-IMask(document.querySelector('#tel'), {
-  mask: '+{38}(000)000-00-00',
-});

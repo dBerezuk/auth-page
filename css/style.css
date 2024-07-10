@@ -194,6 +194,8 @@ svg * {
 
 .auth {
   background-color: var(--dark-blue-alt-color);
+  /* прозрачность формы opacity: 0.9; от 0 до 1 */
+  opacity: 0.9;
   max-width: 460px;
   min-height: 394px;
   padding: 16px;
